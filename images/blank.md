@@ -89,7 +89,7 @@ Type in ipconfig /all
 
 This will bring up tons of network information on your device.  Look for the network device you are using for your local connection.  Find the Default Gateway, remember a DNS server address, Subnet Mask and also think of an IP address you want or you can use the current address.
 
-![Step 18](./images/active_directory_step_18_red_lined.png)
+![Step 18](./images/active_directory_step_18_red_lined.png.png)
 
 Back in your Internet Protocol Version 4 (TCP/IPv4) Properties, click Use the following IP address.
 Enter in your IP address, subnet mask and default gateway.
@@ -131,7 +131,7 @@ You can also ping your router, even though it should still work if you can acces
 ![Step 47](./images/active_directory_step_47.png)
 ![Step 48](./images/active_directory_step_48.png)
 ![Step 49](./images/active_directory_step_49.png)
-![Step 50](./images/active_directory_step_50.png)
+![Step 5](./images/active_directory_step_50.png)
 ![Step 51](./images/active_directory_step_51.png)
 ![Step 52](./images/active_directory_step_52.png)
 ![Step 53](./images/active_directory_step_53.png)
