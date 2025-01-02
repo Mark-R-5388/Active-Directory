@@ -1,4 +1,4 @@
-# Installing Active Directory
+# Installing Active Directory and add a new user to active directory and a group
 
 ## Set up virtual machine with Windows 2022 Server Evaluation Version with Virtual Box
 
@@ -242,13 +242,43 @@ Lets add another User this will be another Domain Administrator to help look ove
 Open Active Directory Users and Computers, highlight Users and click create a new user in the current container at the top.
 
 ![Step 53](./images/active_directory_step_53.png)
+
+After adding a user fill out the information such as name and logon name.
+
 ![Step 54](./images/active_directory_step_54.png)
+
+Then provide a password, can be reset their next logon or you can assign a password they will just use.
+
 ![Step 55](./images/active_directory_step_55.png)
+
+Click Next to create the user.
+
 ![Step 56](./images/active_directory_step_56.png)
+
+To add a user to a group go ahead and right click on the user and in the drop down click Add to a group...
+
 ![Step 57](./images/active_directory_step_57.png)
+
+To add to a group enter the name of the group you would like to add the user to.  Click check names to make sure the correct group shows up.  Then click ok.
+
 ![Step 58](./images/active_directory_step_58.png)
+
+Open up your netowrk settings and check that all the IP address information is the same.  Just a nice double check.  Before we log out as Administrator and log in as our user.
+
 ![Step 59](./images/active_directory_step_59.png)
+
+Click start -> click the user profile image at the top -> click sign out
+
 ![Step 60](./images/active_directory_step_60.png)
+
+Log in as the new user you created with there <username>@<domain> then type in the password.  
+I set it up so the user will have to make a new password
+
 ![Step 61](./images/active_directory_step_61.png)
+
+Click OK to set up a new password
+
 ![Step 62](./images/active_directory_step_62.png)
-![Step 63](./images/active_directory_step_63.png)
+
+Set the password and then log in.
+
