@@ -2,7 +2,12 @@
 
 This demonstration walkthrough is going to explain how to install Windows 2022 server on a virtual machine.
 After the installation of the operating system we will set up Active Directory Domain Services, DNS, and DHCP on the host device.
-This walkthrough was done to help those looking to learn Active Directory, setting up DNS and DHCP and a basic walkthrough of adding a user to a group and into active directory
+This walkthrough was done to help those looking to learn Active Directory, setting up DNS and DHCP and a basic walkthrough of adding a user to a group and into active directory.
+
+Things you make will need for this installation and walkthrough:
+- A Version of Virtual Box to manage your virtual machines - [Download Page](https://www.virtualbox.org/wiki/Downloads)
+- Windows Server 2022 Evaluation version ISO file - [Download Page](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)
+
 
 ## Set up virtual machine with Windows 2022 Server Evaluation Version with Virtual Box
 
