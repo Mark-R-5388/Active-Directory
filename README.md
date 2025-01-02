@@ -248,37 +248,38 @@ After adding a user fill out the information such as name and logon name.
 ![Step 54](./images/active_directory_step_54.png)
 
 Then provide a password, can be reset their next logon or you can assign a password they will just use.
+Click Next to create the user.
 
 ![Step 55](./images/active_directory_step_55.png)
 
-Click Next to create the user.
+To add a user to a group go ahead and right click on the user and in the drop down click Add to a group...
 
 ![Step 56](./images/active_directory_step_56.png)
 
-To add a user to a group go ahead and right click on the user and in the drop down click Add to a group...
-
-![Step 57](./images/active_directory_step_57.png)
 
 To add to a group enter the name of the group you would like to add the user to.  Click check names to make sure the correct group shows up.  Then click ok.
 
-![Step 58](./images/active_directory_step_58.png)
+![Step 57](./images/active_directory_step_57.png)
 
 Open up your netowrk settings and check that all the IP address information is the same.  Just a nice double check.  Before we log out as Administrator and log in as our user.
 
-![Step 59](./images/active_directory_step_59.png)
+![Step 58](./images/active_directory_step_58.png)
 
 Click start -> click the user profile image at the top -> click sign out
 
-![Step 60](./images/active_directory_step_60.png)
+![Step 59](./images/active_directory_step_59.png)
 
 Log in as the new user you created with there <username>@<domain> then type in the password.  
 I set it up so the user will have to make a new password
 
-![Step 61](./images/active_directory_step_61.png)
+![Step 60](./images/active_directory_step_60.png)
 
 Click OK to set up a new password
 
-![Step 62](./images/active_directory_step_62.png)
+![Step 61](./images/active_directory_step_61.png)
 
 Set the password and then log in.
+
+![Step 62](./images/active_directory_step_62.png)
+
 
