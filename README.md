@@ -1,5 +1,9 @@
 # Installing Active Directory and add a new user to active directory and a group
 
+This demonstration walkthrough is going to explain how to install Windows 2022 server on a virtual machine.
+After the installation of the operating system we will set up Active Directory Domain Services, DNS, and DHCP on the host device.
+This walkthrough was done to help those looking to learn Active Directory, setting up DNS and DHCP and a basic walkthrough of adding a user to a group and into active directory
+
 ## Set up virtual machine with Windows 2022 Server Evaluation Version with Virtual Box
 
 For the Windows Server 2022 machine virtual machine setup, open up virtual box and click new at the top of the window toolbar. 
@@ -261,7 +265,7 @@ To add to a group enter the name of the group you would like to add the user to.
 
 ![Step 57](./images/active_directory_step_57.png)
 
-Open up your netowrk settings and check that all the IP address information is the same.  Just a nice double check.  Before we log out as Administrator and log in as our user.
+Open up your network settings and check that all the IP address information is the same.  Just a nice double check.  Before we log out as Administrator and log in as our user.
 
 ![Step 58](./images/active_directory_step_58.png)
 
@@ -269,7 +273,7 @@ Click start -> click the user profile image at the top -> click sign out
 
 ![Step 59](./images/active_directory_step_59.png)
 
-Log in as the new user you created with there <username>@<domain> then type in the password.  
+Log in as the new user you created with there "username"@"domain" then type in the password.  
 I set it up so the user will have to make a new password
 
 ![Step 60](./images/active_directory_step_60.png)
