@@ -40,16 +40,68 @@ Click **Custom: Install Microsoft Server Operating System Only** if it is a fres
 If this is a fresh install and have no files, you do not need to worry.  If you are installing this on your actual working computer or have files you want to keep, make backups of everything and select upgrade.
 
 ![Step 9](./images/active_directory_step_9.png)
+
+Select which drive you would like to install the Windows Server on.
+
 ![Step 10](./images/active_directory_step_10.png)
+
+Next the installation will take over.
+**Grab some coffee, tea or water....this could take some time depending how much processing power you gave your machine**
 ![Step 11](./images/active_directory_step_11.png)
+
+After the installation completes, you will need to create a unique password for the Administrator account.  
+**Do not lose this password!**
 ![Step 12](./images/active_directory_step_12.png)
+
+Log in to your account, right now this is still a workgroup computer so you will not be able to log in to the domain you create yet.
+
 ![Step 13](./images/active_directory_step_13.png)
+
+We will be using this machine to be a DNS server and a DHCP server so you will need to set up a static IP address.
+You have 3 ways to get to your network settings to change you IP address to static.
+1. right click on your network connection in the System aka Notifications area in the bottom right of the screen -> click **Open Network & Internet settings** -> Click **Change adapter options on the right side of the screen** 
+2. in the search bar search Network status and click Network Status -> Click **Change adapter options on the right side of the screen** 
+3. right click the start menu -> click **Network Connections** -> Click **Change adapter options on the right side of the screen** 
+
 ![Step 14](./images/active_directory_step_14.png)
+
+Right click on your network connection and click **Properties**
+
 ![Step 15](./images/active_directory_step_15.png)
+
+Locate Internet Protocol Version 4 (TCP/IPv4) in your list, highlight it and click **Properties**
+You will need:
+1. an IP address you want to set to your Windows server
+2. the default gateway aka your router's address in order to have access to the internet adn handle routing on your network
+3. the subnet mask of your network. 
+4. a DNS server IP address, this will change but you need one initially either using googles 8.8.8.8 or quad9's 9.9.9.9 or your service providers DNS
+
+
 ![Step 16](./images/active_directory_step_16.png)
+
+To find your gateway address, subnet mask and DNS open up command prompt by right clicking the start menu and click run -> type cmd.exe adn then you are in your command prompt
+
+You can also search command prompt in the task bar search bar and click Command prompt
+
 ![Step 17](./images/active_directory_step_17.png)
-![Step 18](./images/active_directory_step_18.png)
+
+Type in ipconfig /all
+
+This will bring up tons of network information on your device.  Look for the network device you are using for your local connection.  Find the Default Gateway, remember a DNS server address, Subnet Mask and also think of an IP address you want or you can use the current address.
+
+![Step 18](./images/active_directory_step_18_red_lined.png.png)
+
+Back in your Internet Protocol Version 4 (TCP/IPv4) Properties, click Use the following IP address.
+Enter in your IP address, subnet mask and default gateway.
+The click Use the following DNS server addresses adn fill in 1 or 2 DNS IP addresses
+Check the box Validate settings upon exit and click OK to save.
+
 ![Step 19](./images/active_directory_step_19.png)
+
+Once verified you had no issues with your settings, open the command prompt again and ping a website, I used www.google.com.  This is to verify we have an internet connection and that the TCP/IP stack is working on your device.
+
+You can also ping your router, even though it should still work if you can access www.google.com.  But if you could not reach google.com the ping to your router is a good first step in troubleshooting.
+
 ![Step 20](./images/active_directory_step_20.png)
 ![Step 21](./images/active_directory_step_21.png)
 ![Step 22](./images/active_directory_step_22.png)
