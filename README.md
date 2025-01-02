@@ -163,23 +163,84 @@ Once restarted, you will be able to log in to your domain under the Administrato
 
 ![Step 33](./images/active_directory_step_33.png)
 ![Step 34](./images/active_directory_step_34.png)
+
+Go back to your command prompt and run ipconfig /all.  Check to make sure the IP address is correct, subnet mask, and default gateway are also correct.
+You may noticed the DNS server is 127.0.0.1 which is good because we set our machine up as a DNS server.  This is pointing the DNS server to our IP address.
+
 ![Step 35](./images/active_directory_step_35.png)
+
+Go to Open your active directory by going to the start menu -> Windows Administrative Tool -> click Active Directory Users and Computers
+
 ![Step 36](./images/active_directory_step_36.png)
+
+In here expand your domain on the left side and locate Domain Controllers.  Click on the Originizational Unit named Domain Controllers and check to see if your device is under this area.
+
 ![Step 37](./images/active_directory_step_37.png)
+
+Go back to Windows Administrative Tools and click on DNS
+
 ![Step 38](./images/active_directory_step_38.png)
+
+Expand your machine on the left side then the forward lookup zones and click on yopur domain.  Under your domain, check to see if there is a Start of Authority (SOA), a Name Server (NS) and a Host (A) record.  
+The A record should have your IP address under the Data table.
+
 ![Step 39](./images/active_directory_step_39.png)
+
+We will now install the role of DHCP on the server to handle distributing IP addresses to computers under our network.
+Click manage at the top of the server dashboard and select add roles and features.  From the drop down click DHCP server and install any features it may need.
+Run through the prompts keeping everything as default and click install.
+
 ![Step 41](./images/active_directory_step_41.png)
+
+Once the installation of the DHCP role is complete click close.
+
 ![Step 42](./images/active_directory_step_42.png)
+
+To complete the DHCP configuration, click under the flag notification and click Complete DHCP configuration.
+
 ![Step 43](./images/active_directory_step_43.png)
+
+Click on start and go to Windows Administrative Tools and click DHCP
+
 ![Step 44](./images/active_directory_step_44.png)
+
+Expand the domain controller and right click on IPv4 and click New Scope.
+We will now make our range of addreses that we want to assign to computers when they are joinging our network.
+This scope can be changed however you see fit.
+
 ![Step 45](./images/active_directory_step_45.png)
+
+Give your scope a name.
+
 ![Step 46](./images/active_directory_step_46.png)
+
+Set the range of total IP address for the network and then set the network mask length.
+
 ![Step 47](./images/active_directory_step_47.png)
+
+Add exclusions in scope range if you would like.  These would be used for devices that would be on the network for a long time or should not have a dynamic IP addresses.
+
 ![Step 48](./images/active_directory_step_48.png)
+
+Assign the default gateway that each device will use when they log on to network.
+
 ![Step 49](./images/active_directory_step_49.png)
+
+Your domain name and DNS servers for the scope can stay as defaults.
+
 ![Step 50](./images/active_directory_step_50.png)
+
+Click that you would like to activate this scope now.
+
 ![Step 51](./images/active_directory_step_51.png)
+
+Go back to DHCP and check under IPv4 then scope and address pool.  You shoudl see the scope you just created.
+
 ![Step 52](./images/active_directory_step_52.png)
+
+Lets add another User this will be another Domain Administrator to help look over the domain.
+Open Active Directory Users and Computers, highlight Users and click create a new user in the current container at the top.
+
 ![Step 53](./images/active_directory_step_53.png)
 ![Step 54](./images/active_directory_step_54.png)
 ![Step 55](./images/active_directory_step_55.png)
