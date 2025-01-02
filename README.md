@@ -103,18 +103,64 @@ Once verified you had no issues with your settings, open the command prompt agai
 You can also ping your router, even though it should still work if you can access www.google.com.  But if you could not reach google.com the ping to your router is a good first step in troubleshooting.
 
 ![Step 20](./images/active_directory_step_20.png)
+
+Next you will have to change the host name of your computer.  You can do this multiple ways:
+1. Click on local server of the dashboard on the left side -> click on the computer name -> click Change...
+2. Right click the start button and click System -> Scroll down on the right side and click Advanced sytem settings -> click Computer Name Tab at the top -> click Change...
+3. search "about" in the taskbar search box -> Scroll down on the right side and click Advanced sytem settings -> click Computer Name Tab at the top -> click Change...
+Once here, change the Computer name to identify your host name, we will change to a domain name later.  Cllick OK then Close and allow the computer to reload for the changes to take effect.
+
 ![Step 21](./images/active_directory_step_21.png)
+
 ![Step 22](./images/active_directory_step_22.png)
+
+Now we will add the Active Directory Domain Services and DNS on this system.  Click at the top where it says manage and click Add Roles and Features
+
 ![Step 23](./images/active_directory_step_23.png)
+
+Add this feature as a Role based installation and click Next.
+
 ![Step 24](./images/active_directory_step_24.png)
+
+Select your host and make sure the IP address is still the same as the static one you set up earlier.  Then click Next
+
 ![Step 25](./images/active_directory_step_25.png)
+
+For server roles check DNS and add features that are needed and also check Active Directory Domain Services and add its features.  Then click Next.
+
 ![Step 26](./images/active_directory_step_26.png)
+
+Follow through the prompts and you will then install these roles and features once the installation is complete you can close out of this window or click **Promte this server to a domain controller**
+
 ![Step 27](./images/active_directory_step_27.png)
+
+To promote this server to a domain controller click under the notification flag and click **Promote this server to a domain controller**
+
 ![Step 28](./images/active_directory_step_28.png)
+
+For your domain controller select add a new forest and give your domain a domain name. This is up to youi what you want your domain to be named.
+
+Choose the highest level Forest and Domain functional level your Server OS version can be.
+Keep the capabilities as default.
+Create a Directory Services Restore Mode (DSRM) password.  This is used if you need to log in to recovery mode on the server or are not able to log in to active directory with your normal password such as for a forest or domain restore.
+
 ![Step 29](./images/active_directory_step_29.png)
+
+Keep the NetBIOS default.
+
 ![Step 30](./images/active_directory_step_30.png)
+
+Keep the file paths as default.
+
 ![Step 31](./images/active_directory_step_31.png)
+
+Next there will be a Prerequiste Check screen.  Making sure that your system is able to to be pushed as a Domain Controller and if there are any errors you need to address.
+If all looks good, click Install and your system will restart
+
 ![Step 32](./images/active_directory_step_32.png)
+
+Once restarted, you will be able to log in to your domain under the Administrator using your password you created.
+
 ![Step 33](./images/active_directory_step_33.png)
 ![Step 34](./images/active_directory_step_34.png)
 ![Step 35](./images/active_directory_step_35.png)
